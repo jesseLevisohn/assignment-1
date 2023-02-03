@@ -1,0 +1,41 @@
+1. mkdir answers
+2. cd answers
+   touch answers.txt
+3. nano answers.txt
+4. /Users/jessebecklevisohn/GitHub/assignment-1/answers/answers.txt
+5. ls -a
+6. ls directoryName
+7. rm removes a file permanently from your device. If you have two files 
+with similar names you could accidentally end up permanently deleting one. 
+Sometimes people also use the rm command when they are trying to remove an 
+item from a particular location without knowing that it deletes it 
+entirely.
+8. mkdir results
+9. nano my_script.sh and then I copied and pasted the code into the 
+document.
+10. chmod 775 my_script.sh
+11. cd ../assignment-1-main-main/data
+12. wc -w data/* | sort -nr | head -n 3 | tail -n 1
+13.
+for item in *.csv
+do
+	../../answers/my_script.sh $item
+done
+14.
+for item in *.zip
+do
+	unzip $item
+	mv $item unzipped-files
+done
+15.
+for item in *.zip
+do
+	rm $item
+done
+16. cd unzipped-files
+for item in *200*
+do
+	cp $item ../../../answers/results
+done
+ 
+
